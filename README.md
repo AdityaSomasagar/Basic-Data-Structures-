@@ -1,68 +1,50 @@
-# 📘 Java Data Structures Practice
+# Java Data Structures Practice
 
-This repository showcases basic implementations and practice of core **Data Structures and Algorithms** concepts in Java.
+This repository contains simple and foundational implementations of basic Data Structures and Algorithms using Java. It's a great starting point for learners who want to understand how these structures work internally and how basic sorting and recursion can be implemented manually.
 
----
+## 📁 Included Files
 
-## 📁 Contents
+| File Name             | Description                          |
+|----------------------|--------------------------------------|
+| `ArraySetOne.java`   | Demonstrates a simple set using arrays. |
+| `BubbleSort.java`    | Basic implementation of the Bubble Sort algorithm. |
+| `DoublyLinkedList.java` | Operations on a doubly linked list (insert, delete, display). |
+| `InsertionSort.java` | Basic implementation of the Insertion Sort algorithm. |
+| `RecursionPractice.java` | Examples to understand basic recursion techniques. |
+| `SelectionSort.java` | Basic implementation of the Selection Sort algorithm. |
+| `SinglyLinkedList.java` | Operations on a singly linked list. |
+| `StackOne.java`      | Stack implementation using array. |
 
-| File              | Description                                                             |
-|-------------------|-------------------------------------------------------------------------|
-| `ArraySetOne.java` | Demonstrates operations on arrays like reversal, swapping, printing in order/reverse |
-| `BubbleSort.java`  | Implements the classic Bubble Sort algorithm with sorting logic         |
+## ✅ Key Concepts Covered
 
----
+- Arrays and Set logic
+- Sorting Algorithms:
+  - Bubble Sort
+  - Insertion Sort
+  - Selection Sort
+- Linked Lists:
+  - Singly Linked List
+  - Doubly Linked List
+- Stack (Array-based)
+- Recursion Techniques
 
-## 💡 Topics Covered
+## 💡 How to Run
 
-- ✅ Array creation and traversal  
-- ✅ Array reversal (in-place and output-only)  
-- ✅ Swapping first and last elements in an array  
-- ✅ Bubble Sort  
-- ✅ Using loops and recursion for array manipulation  
-- ✅ Basic I/O operations in Java  
+Ensure Java is installed. Compile and run individual files using:
 
----
+```bash
+javac FileName.java
+java FileName
+```
 
-## 🚀 How to Run
+> Replace `FileName` with the class name (matching the file name) you'd like to run.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Compile and run a Java file:**
-   ```bash
-   javac ArraySetOne.java
-   java ArraySetOne
-   ```
-
-   Replace `ArraySetOne` with the name of any class containing the `main()` method.
-
----
-
-## 🧠 Concepts Practiced
-
-- Arrays and indexing  
-- Sorting algorithms (Bubble Sort)  
-- Conditionals and loops  
-- Java syntax and I/O  
-- Recursion (planned for future)  
+## 👨‍💻 Author
+Name: Aditya A S\
+College name: Jain University\
+College Email Id: 22btris005@jainuniversity.ac.in\
+This repository is maintained as a personal practice ground to strengthen foundational knowledge in data structures using Java.
 
 ---
 
-## 📌 Next Steps (To-Do)
-
-- [ ] Add recursion examples (e.g., factorial, Fibonacci)  
-- [ ] Add LinkedList implementation  
-- [ ] Add Stack and Queue examples  
-- [ ] Add searching algorithms (Linear/Binary Search)  
-
----
-
-## 🙌 Contributions
-
-Feel free to fork this repository and expand the examples or optimize the existing code.
-
----
+Feel free to fork, clone, or suggest improvements!
