@@ -168,6 +168,11 @@ public void multiplyAllEle(int[] a){
     System.out.println(prod);
 }
 
+public void Array(){
+        int [] arr = {1,2,3,4,5};
+
+}
+
     public static void main(String[] args) {
         double[] array = {4, 7, 5, 0, 8, 38, 9};
         int[] a = {3, 6, 7, 2, 9, 9, 9, 8};
