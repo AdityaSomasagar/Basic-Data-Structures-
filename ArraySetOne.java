@@ -174,10 +174,6 @@ public class ArraySetOne {
         System.out.println(prod);
     }
 
-    public void Array() {
-        int[] arr = {1, 2, 3, 4, 5};
-
-    }
 
     public static void main(String[] args) {
         double[] array = {4, 7, 5, 0, 8, 38, 9};
