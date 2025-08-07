@@ -10,6 +10,7 @@ public class ArraySetOne {
     }
 
     public double average(double[] a) {
+
         return sumOfElements(a) / a.length;
     }
 
@@ -81,97 +82,102 @@ public class ArraySetOne {
         return a;
     }
 
-    public void linearSearch(int s, int[] a){
+    public void linearSearch(int s, int[] a) {
         int lb = a[0];
-        int ub = a[a.length-1];
-        for(int i=lb; i<ub; i++){
-            if(a[i] == s){
-                System.out.println("Element "+a[i]+" found at index "+i+" using linear search");
+        int ub = a[a.length - 1];
+        for (int i = lb; i < ub; i++) {
+            if (a[i] == s) {
+                System.out.println("Element " + a[i] + " found at index " + i + " using linear search");
                 break;
             }
         }
     }
 
-    public void copyArray(int[] a){
-        System.out.println("Arr a: "+Arrays.toString(a));
-        int[] b = new int [a.length];
-        for(int i=0; i<a.length; i++){
-            for(int j=0; j<b.length; j++){
+    public void copyArray(int[] a) {
+        System.out.println("Arr a: " + Arrays.toString(a));
+        int[] b = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
                 if (i == j) {
                     b[j] = a[i];
                 }
             }
         }
-        System.out.println("Array b: "+Arrays.toString(b));
+        System.out.println("Array b: " + Arrays.toString(b));
     }
 
-    public void reverse(int[] a){
+    public void reverse(int[] a) {
         System.out.println("Reverse an array: ");
         int i = 0;
-        int j = a.length-1;
+        int j = a.length - 1;
         int temp;
-        while(i<j){ //when they both meet together in middle, this makes sure they do not cross
+        while (i < j) { //when they both meet together in middle, this makes sure they do not cross
             temp = a[i];
             a[i] = a[j];
             a[j] = temp;
-            i++; j--;
+            i++;
+            j--;
         }
         System.out.println(Arrays.toString(a));
     }
 
-    public void reverseOrder(int[] ahh){
+    public void reverseOrder(int[] ahh) {
         System.out.println("Print an array in reverse order: ");
-        for(int i=ahh.length-1; i>=0; i--){
-            System.out.print(ahh[i]+" ");
+        for (int i = ahh.length - 1; i >= 0; i--) {
+            System.out.print(ahh[i] + " ");
         }
         System.out.println();
     }
-    public void swapEle(int[] a){
+
+    public void swapEle(int[] a) {
         System.out.println("Swap first and last ele");
         int temp = a[0];
-        a[0] = a[a.length-1];
-        a[a.length-1] = temp;
+        a[0] = a[a.length - 1];
+        a[a.length - 1] = temp;
         System.out.println(Arrays.toString(a));
     }
-    public void freqCount(int target , int[] a){
+
+    public void freqCount(int target, int[] a) {
         int count = 0;
         for (int j : a) {
             if (j == target) {
                 count++;
             }
         }
-        System.out.println("Frequency of "+target+" is: "+count);
+        System.out.println("Frequency of " + target + " is: " + count);
     }
-    public void indexOfSpecificEle(int[] a, int target){
-        for(int i=0; i<a.length; i++){
-            if(a[i] == target){
-                System.out.println("Index of "+target+" is: "+i);
+
+    public void indexOfSpecificEle(int[] a, int target) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == target) {
+                System.out.println("Index of " + target + " is: " + i);
             }
         }
     }
-public void replaceEven(int[] a){
-    System.out.println("Replace even numbers with -1");
-        for(int i=0; i<a.length; i++){
-            if(a[i]%2==0){
+
+    public void replaceEven(int[] a) {
+        System.out.println("Replace even numbers with -1");
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
                 a[i] = -1;
             }
+        }
+        System.out.println(Arrays.toString(a));
     }
-    System.out.println(Arrays.toString(a));
-}
 
-public void multiplyAllEle(int[] a){
-    System.out.println("Product of all elements in the array.");
-        long prod=1;
-    for (int i : a) {
-        prod *= i;
+    public void multiplyAllEle(int[] a) {
+        System.out.println("Product of all elements in the array.");
+        long prod = 1;
+        for (int i : a) {
+            prod *= i;
+        }
+        System.out.println(prod);
     }
-    System.out.println(prod);
-}
 
-public void Array(){
-        int [] arr = {1,2,3,4,5};
+    public void Array() {
+        int[] arr = {1, 2, 3, 4, 5};
 
-}
+    }
 
     public static void main(String[] args) {
         double[] array = {4, 7, 5, 0, 8, 38, 9};
@@ -195,8 +201,8 @@ public void Array(){
 //        arr.reverseOrder(a);
 //        arr.swapEle(a);
 //        arr.freqCount(9, a);
-          arr.indexOfSpecificEle(a, 7);
+        arr.indexOfSpecificEle(a, 7);
 //          arr.replaceEven(a);
-          arr.multiplyAllEle(a);
+        arr.multiplyAllEle(a);
     }
 }
